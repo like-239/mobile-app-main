@@ -1,0 +1,626 @@
+   <TouchableOpacity onPress={() => navigation.goBack()} style={{ backgroundColor: '#FFFFF'}}>
+ 
+ </TouchableOpacity>
+ 
+  <TouchableOpacity onPress={() => navigation.goBack()} style={{ backgroundColor: '#FFFFF'}}>
+          <Image source={require('./arrow.png')} style={styles.backBTN} />
+          </TouchableOpacity>
+          <Image source={require('./arrow.png')} style={styles.backBTN} />
+ 
+{ backgroundColor: '#5063BF'}
+ 
+<Text style={styles.budgetText}> </Text>
+ 
+{budget.category}
+ 
+Danh mục:
+ 
+|| require('./Group91.png')
+ 
+requestGet_BudgetDetail
+ 
+  style={styles.moneyInput}
+ 
+else {
+      alert('Please enter a valid number');
+    }
+ 
+  <Text style={styles.TotalBalanceCount}>{formatNumberWithCommas(newTotalBalance)}</Text>
+ 
+formatNumberWithCommas(newTotalBalance)
+ 
+  <Text style={styles.TotalBalanceCount}>
+    {formatNumberWithCommas(newTotalBalance)}
+  </Text>
+ 
+updat
+ 
+   {showProgress && <ProgressBar progress={progress} />}
+ 
+  handleAddTransaction();
+ 
+   paddingLeft:20
+ 
+marginLeft: 10
+ 
+  marginRight:90,
+ 
+justifyContent:'center',
+ 
+ alignItems:'center',
+    justifyContent:'center'
+ 
+ <Text style={styles.title}>{ category}</Text>
+ 
+ // Ví dụ về danh mục 'Giải trí'
+    // Thêm các danh mục khác và ảnh tương ứng ở đây
+ 
+      <View ></View>
+ 
+COLORS.lightWhite
+ 
+COLORS.black
+ 
+   flex: 1,
+ 
+.replace(/\./g, '')
+ 
+.replace(/\./g, '')
+ 
+cost
+ 
+  borderTopLeftRadius: 40,
+        borderTopRightRadius: 40,
+ 
+{ height: containerHeight
+ 
+ //const filteredTransactions = filterTransactionsByType(weekTransactions, selectedTab);
+ 
+      //setWeekTransactions(filteredTransactions);
+ 
+const transactionDate = moment(transaction.time);
+ 
+Bud
+ 
+ padding: 20,
+ 
+ shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+ 
+ shadowOffset: { width: 0, height: 2 },
+ 
+flexDirection: 'row',
+ 
+borderBottomWidth: 1,
+ 
+ marginHorizontal:25
+ 
+marginTop:15,
+ 
+ <View style={styles.Container}>
+ 
+          
+          <Text style={styles.title}>Ngân sách Đang áp dụng</Text>
+ 
+  
+          <Text style={styles.label}>Bắt đầu: {new Date(startDate).toLocaleDateString('vi-VN')}</Text>
+          <Text style={styles.label}>Kết thúc: {new Date(endDate).toLocaleDateString('vi-VN')}</Text>
+ 
+ <TouchableOpacity style={styles.button} onPress={handleCreateBudget}>
+        <Text style={styles.buttonText}>Tạo Ngân sách</Text>
+      </TouchableOpacity>
+ 
+if (budgets.length === 0) {
+        return (
+          <View style={styles.container}>
+            <Text style={styles.title}>Bạn chưa tạo ngân sách nào</Text>
+            <TouchableOpacity style={styles.button} onPress={handleCreateBudget}>
+              <Text style={styles.buttonText}>Tạo Ngân sách</Text>
+            </TouchableOpacity>
+          </View>
+        );
+      }
+ 
+  const handleCreateBudget = () => {
+        navigation.navigate('Budget'); // Name of the budget screen to navigate to
+      };
+ 
+if (initialBudget && spentAmount) {
+ 
+container: {
+ 
+  flex: 1,
+      padding: 20,
+      backgroundColor: '#FFFFFF',
+    },
+    title: {
+      fontSize: 24,
+      fontWeight: 'bold',
+      marginBottom: 20,
+    },
+    label: {
+      fontSize: 18,
+      marginBottom: 10,
+    },
+ 
+ container: {
+        padding: 20,
+        backgroundColor: '#FFFFFF',
+        alignItems: 'center',
+        justifyContent: 'center',
+      },
+ 
+   <View style={styles.container}>
+ 
+  </View>
+ 
+ <View style={styles.wrapper}>
+ 
+ <View key={budget._id} >
+   
+    
+  </View>
+ 
+  position: 'absolute', // Thiết lập vị trí tuyệt đối để có thể đặt nó trên biểu đồ
+    bottom: 20, // Điều chỉnh vị trí theo y
+    right: 20, // Điều chỉnh vị trí theo x
+ 
+  <TouchableOpacity style={styles.button} onPress={handleCreateBudget}>
+        <Text style={styles.buttonText}>Tạo Ngân sách</Text>
+      </TouchableOpacity>
+ 
+{ updateTotalBalanceCount }
+ 
+{ updateTotalBalanceCount })}
+ 
+ flexDirection:'row',
+ 
+style={styles.budgetContainer
+ 
+ <Text style={styles.subtitle}>Tháng này</Text>
+      
+      <ProgressBar progress={progress} />
+      <View style={styles.amountsContainer}>
+        <Text style={styles.amount}>{new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(remainingAmount)} còn lại</Text>
+        <Text style={styles.amount}>{new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(spentAmount)} đã chi</Text>
+      </View>
+      <Text style={styles.days}>{daysUntilEndOfMonth.toFixed(0)} ngày đến cuối tháng</Text>
+ 
+ remainingAmount
+ 
+add
+ 
+<View style={styles.container}>
+        {latestTransaction ? (
+          <View style={styles.transactionContainer}>
+            <Text style={styles.label}>Loại giao dịch: {latestTransaction.transaction_type}</Text>
+            <Text style={styles.label}>Số tiền: {latestTransaction.cost}</Text>
+            <Text style={styles.label}>Danh mục: {latestTransaction.category}</Text>
+            <Text style={styles.label}>Ghi chú: {latestTransaction.note}</Text>
+            <Text style={styles.label}>Thời gian: {latestTransaction.time}</Text>
+          </View>
+        ) : (
+          <Text style={styles.noTransaction}>Không có giao dịch nào</Text>
+        )}
+      </View>
+ 
+ fetchedTransaction.transaction_type !== latestTransaction.transaction_type
+ 
+ fetchedTransaction.time !== latestTransaction.time ||
+ 
+fetchedTransaction.note !== latestTransaction.note ||
+ 
+ fetchedTransaction.category !== latestTransaction.category ||
+ 
+fetchedTransaction.id !== latestTransaction.id ||
+ 
+ fetchedTransaction.cost !== latestTransaction.cost ||
+          fetchedTransaction.category !== latestTransaction.category ||
+          fetchedTransaction.note !== latestTransaction.note ||
+          fetchedTransaction.time !== latestTransaction.time ||
+          fetchedTransaction.transaction_type !== latestTransaction.transaction_type
+ 
+  /*if (latestTransaction) {
+      const matchingBudget = budgets.find(budget => isTransactionWithinBudget(latestTransaction, [budget]));
+      if (matchingBudget) {
+        updateBudgetCost(latestTransaction, matchingBudget);
+      }
+    }*/
+  }, [latestTransaction, budgets]);
+ 
+ useEffect(() => {
+    
+
+   
+
+    };
+ 
+
+      try {
+        const response = await API.requestSignup('/budget/update', budgetUpdateData);
+        if (response.success) {
+          setBudgets(prevBudgets =>
+            prevBudgets.map(b => (b._id === budget._id ? { ...b, cost: updatedCost } : b))
+          );
+        } else {
+          console.error('Failed to update budget');
+        }
+      } catch (error) {
+        console.error('Error updating budget:', error);
+      }
+ 
+ const updateBudgetCost = async (transaction, budget) => {
+      const updatedCost = budget.cost - transaction.cost;
+      const budgetUpdateData = {
+        cost: updatedCost,
+        category: budget.category,
+        id: budget._id,
+        startDate: budget.startDate,
+        endDate: budget.endDate,
+        createAt: budget.createAt,
+        userId: budget.userId
+      };
+ 
+createAt: budget.createAt,
+ 
+  const isTransactionWithinBudget = (latestTransaction, budgets) => {
+ 
+saveTransaction
+ 
+  
+          return budget;
+ 
+ if (
+            budget.category === transaction.category &&
+            new Date(budget.startDate) <= transactionDate &&
+            new Date(budget.endDate) >= transactionDate
+          ) {
+            return {
+              ...budget,
+              cost: budget.cost - transaction.amount,
+            };
+          }
+ 
+  const transactionDate = new Date(transaction.date);
+ 
+ if(latestTransaction.)
+ 
+setContainerHeight(window.height / 6);
+ 
+d=${Id}&
+ 
+id=${storedUserId}
+ 
+esponse.userId
+ 
+
+      recentlyViewedProducts:[],
+ 
+Ba
+ 
+ console.log(typeof newTotalBalance);
+ 
+await AsyncStorage.setItem('totalBalance',responses.user.totalBalance);
+ 
+ const storedTotalBalance = await AsyncStorage.getItem('totalBalance');
+ 
+/ Trừ số tiền nếu là chi ph
+ 
+ const storedUserEmail = await AsyncStorage.getItem('email');
+      const storedToken = await AsyncStorage.getItem('token');
+        setUsername(storedUsername);
+        setUserEmail(storedUserEmail);
+      setToken(storedToken);
+ 
+use
+ 
+use
+ 
+console.log('updatedata',updateData)
+ 
+console.log(response)
+ 
+ "recentlyViewedProducts": [],
+ 
+ setTotalBalance='';
+ 
+  const amount = parseInt(cost);
+      route.params.updateTotalBalanceCount(amount,transaction_type);
+      
+ 
+console.log(authResponse.token)
+ 
+ if (transaction_type === 'chi phí') {
+        // Nếu là chi phí, trừ khoản chi ra khỏi tổng số dư
+        route.params.updateTotalBalanceCount(cost,transaction_type);
+      } else if (transaction_type === 'thu nhập') {
+        // Nếu là thu nhập, cộng khoản thu vào tổng số dư
+        route.params.updateTotalBalanceCount(amount);
+      }
+ 
+ if (transaction_type === 'chi phí') {
+        // Nếu là chi phí, trừ khoản chi ra khỏi tổng số dư
+        route.params.updateTotalBalanceCount(-amount);
+      } else if (transaction_type === 'thu nhập') {
+        // Nếu là thu nhập, cộng khoản thu vào tổng số dư
+        route.params.updateTotalBalanceCount(amount);
+      }
+      
+ 
+route.params.updateTotalBalanceCount(amount);
+ 
+ const uniqueCategories = Array.from(new Set(categories));
+ 
+   let totalCost = 0;
+ 
+import { showMessage } from 'react-native-flash-message';
+ 
+// Chạy chỉ một lần sau khi màn hình được tạo
+ 
+ console.log(storedToken)
+ 
+
+       console.log(response.token)
+ 
+ 
+       console.log("UserName",storedUsername);
+ 
+  <Text >********</Text>
+ 
+<View style={styles.wrapper}>
+              
+              <View style={styles.inputWrapper}>
+              <Text style={styles.persionalInfor}>Address</Text>
+                  <Text >Viet Nam</Text>
+              </View>
+            </View>
+ 
+View style={styles.wrapper}>
+              
+              <View style={styles.inputWrapper}>
+                
+              <Text style={styles.persionalInfor}>Mobile phone</Text>
+                  <Text >12345678</Text>
+              </View>
+            </View>
+ 
+  console.log(responses.user.username, responses.user.email);
+ 
+ console.log(responses)
+ 
+
+        console.log(responses);
+ 
+    
+          //console.log(storedToken);
+ 
+
+        setToken(storedToken);
+        
+ 
+ const storedToken = await AsyncStorage.getItem('token');
+ 
+ }, 2000);
+ 
+export default BudgetStatu
+ 
+    <Stack.Screen
+          name="BudgetStatus"
+          component={BudgetStatus}
+          options={{headerShown: false}}
+        />
+ 
+Chi Tiết Giao Dịch:
+ 
+import moment from 'moment';
+ 
+   marginLeft:-50 
+ 
+/View>
+ 
+ <View style={[styles.TopContainer, { height: containerHeight }]}>
+            <View style={styles.titleContainer}>
+            
+            </View>
+ 
+<Image
+         source={require('./arrow.png')} 
+         style={styles.backBTN}
+        />
+        
+            <Text style={styles.title}> Thêm giao dịch</Text>
+ 
+MonthCh
+ 
+ console.log("Transaction in MonthChart",transactions);
+ 
+  ref={inputRef}
+ 
+const BalanceUpdateModal = ({ isVisible, onSubmit, onCancel }) => (
+    
+    <Modal
+      animationType="slide"
+      transparent={true}
+      visible={isModalVisible}
+      onRequestClose={() => {
+        setModalVisible(!isModalVisible);
+      }}
+    >
+      <View style={styles.centeredView}>
+        <View style={styles.modalView}>
+          <TextInput
+            style={styles.modalText}
+            onChangeText={text => setNewTotalBalance(text)}
+            value={newTotalBalance}
+            keyboardType="numeric"
+            placeholder="Enter new balance"
+          />
+          <Button title="Submit" onPress={handleUpdateTotalBalance} />
+          <Button title="Cancel" onPress={() => setModalVisible(false)} />
+        </View>
+      </View>
+    </Modal>
+  );
+ 
+  const handleUpdateTotalBalance = (newBalance) => {
+    if (!isNaN(newBalance) && newBalance.trim() !== '') {
+      setTotalBalanceCount(Number(newBalance));
+      setModalVisible(false);
+    } else {
+      alert('Please enter a valid number');
+    }
+  };
+ 
+ {isEditing ? (
+        <TextInput
+          style={styles.input}
+          onChangeText={handleChange}
+          value={totalBalanceCount.toString()}
+          keyboardType="numeric"
+          returnKeyType="done"
+          onBlur={handleBlur}
+          autoFocus
+        />
+      ) : (
+        <TouchableOpacity onPress={handleFocus} style={styles.balanceDisplay}>
+          <Text style={styles.balanceText}>
+            {totalBalanceCount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+          </Text>
+        </TouchableOpacity>
+      )}
+ 
+const weekDates = [];
+
+ 
+ <View style={styles.centeredView}>
+        <View style={styles.modalView}>
+         
+      </View>
+ 
+ <TextInput
+            style={styles.modalText}
+            onChangeText={text => setNewTotalBalance(text)}
+            value={newTotalBalance}
+            keyboardType="numeric"
+            placeholder="Enter new balance"
+          />
+          <Button title="Submit" onPress={handleUpdateTotalBalance} />
+          <Button title="Cancel" onPress={() => setModalVisible(false)} />
+        </View>
+ 
+export default BalanceUpdateModal;
+ 
+ // BalanceUpdateModal.js
+import React, { useState } from 'react';
+import { Modal, View, TextInput, Button, StyleSheet } from 'react-native';
+ 
+
+            <View style={styles.TotalCountContainer}>
+              <Text style={styles.Time}>Tháng</Text>
+            </View>
+
+ 
+ paddingVertical:{""}
+ 
+   tabBarIcon: ({focused}) => {
+ 
+//import WeekChart from './WeekChart';
+ 
+  const [transactions, setTransactions] = useState([]);
+ 
+setQuarterTransactions(quarterTransactions);  
+ 
+setWeekTransactions(weekTransactions);
+ 
+ // Hàm này lọc và trả về các giao dịch dựa trên loại đã cho ('chiPhi' hoặc 'thuNhap')
+ 
+selected
+ 
+  setShowMonthChart(false);
+    setShowWeekChart(false);
+ 
+  /*const handleGetTransactions = async () => {
+    try {
+      const loginData = {
+        username: 'admin123',
+        password: '123456',
+      };
+      const authResponse = await API.requestPOST_Login('/auth/login', loginData);
+      setToken(authResponse.token);
+      const response = await API.requestGET_AllTRANSACTIONS(`/transactions?token=${token}`);
+      if (response) {
+        const todayTransactions = response.filter(transaction => {
+          const transactionDate = moment(transaction.time).startOf('day');
+          const currentDate = moment().startOf('day');
+          return transactionDate.isSame(currentDate, 'day');
+        });
+        setTransactions(todayTransactions);
+      } else {
+        console.log('Get failed:', response.status);
+      }
+    } catch (error) {
+      console.error('Error during signup:', error);
+    }
+  };
+  */
+ 
+ <View style={styles.categoryIconWithText}>
+      
+    </View>
+ 
+ <View style={styles.categoryIconWithText}>
+        
+    </View>
+ 
+  <View style={styles.categoryIconWithText}>
+        
+    </View>
+ 
+<View style={styles.categoryIconWithText}>
+      
+    </View>
+ 
+<TouchableOpacity style={styles.categoryIconWithText}
+             onPress={() => handleCategorySelection('sức khỏe')}
+            >
+        <Image
+            source={require('./health.png')} 
+            style={styles.categoryIcon}
+        />
+        <Text style={styles.categoryText}>Sức khỏe</Text>
+    </TouchableOpacity>
+ 
+ if(tab !== 'thang') {
+      setShowMonthChart(false);
+    }
+ 
+setShowMon
+ 
+  console.log()
+ 
+import { LineChart, Grid } from 'react-native-svg-charts';
+ 
+import PieChart from './PieChart';
+ 
+// Sử dụng MyLineChart tại đây
+ 
+<Text>Hi</Text>
+ 
+import Home from './app/screens/Home';
+ 
+import BottomTabNavigation from './app/navigation/BottomTabNavigation';
+ 
+import Login from './app/screens/auth/Login';
+import Signup from './app/screens/auth/Signup';
+ 
+import ProfileScreen from './app/screens/profile/ProfileScreen';
+import OrderManagement from './app/screens/profile/OrderManagement';
+import SellerProfile from './app/screens/profile/SellerProfile';
+ 
+import Cart from './app/screens/Cart';
+import Paying from './app/screens/Paying';
+import AddProduct from './app/screens/seller/AddProduct';
+import UpdateProduct from './app/screens/seller/UpdateProduct';
+
+ 
