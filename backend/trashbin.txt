@@ -1,0 +1,217 @@
+   getUserById: async (req, res, next) => {
+        try {
+            const userId = req.query.id;
+            const user = await User.findById(userId);
+            
+            if (!user) {
+                return res.status(404).json({
+                    success: false,
+                    message: "User not found",
+                });
+            }
+            
+            res.status(200).json({
+                success: true,
+                user: user
+            });
+        } catch (error) {
+            console.error(error);
+            res.status(500).json({
+                success: false,
+                message: "Internal server error",
+            });
+        }
+    },
+    
+ 
+res.status(401).json({
+                    success: false,
+                    message: "Transaction created false!, Invalid data provided",
+                
+                });
+ 
+ else if( !(time instanceof Date)){
+                console.log('Transaction created false!, Invalid time provided')
+                return res.status(401).json({
+                    success: false,
+                    message: "Invalid transaction data provided!",
+                });
+            }
+ 
+ // Nếu dữ liệu hợp lệ, chuyển điều khiển đến middleware tiếp theo
+ 
+if (typeof cost !== 'number' ) {
+                console.log('Transaction created false!, Invalid cost provided')
+                return res.status(401).json({
+                    success: false,
+                    message: "Invalid transaction data provided!",
+                });
+            }
+ 
+// Kiểm tra các trường dữ liệu khác ở đây tương tự
+ 
+transactionSchema.methods.comparePassword = async function (enteredPassword) {
+    return await bcrypt.compare(enteredPassword, this.password);
+};
+ 
+    transaction: newTransaction
+ 
+// Ném lỗi nếu dữ liệu không hợp lệ
+ 
+console.log('Middleware handle401Error is called');
+ 
+// Thực hiện các hành động cần thiết cho lỗi 401 ở đây
+ 
+const handle404Error= require('./src/middlewares/errorHandlers');
+ 
+app.use(handle404Error);
+ 
+errorHandlers.
+ 
+, errorHandler
+ 
+ } 
+ 
+ console.log('Đường dẫn URL của cơ sở dữ liệu:', process.env.DB_URL);
+      console.log('Tên cơ sở dữ liệu:', db.name);
+ 
+/*
+ 
+checkAdminRole,
+ 
+ recentlyViewedProducts: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Product',
+    }],
+ 
+unique: true,
+ 
+unique: true,
+ 
+ unique: true,
+ 
+unique: true
+ 
+  validate: {
+            validator: function(v) {
+                const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+                return emailRegex.test(v);
+            },
+            message: "Invalid email format, please try again."
+        }
+ 
+ /*avatar: {
+        public_id: {
+            type: String,
+            required: true,
+        },
+        url: {
+            type: String,
+            required: true,
+        },
+    },*/
+ 
+catch
+ 
+else{
+            console.error('Error:', error);
+
+           }
+ 
+ if (res.statusCode === 400) {
+                return res.status(400).json({
+                    success: false,
+                    message: error.message
+                });
+            }
+ 
+db.once('open', () => {
+ 
+ avatar: {
+        public_id: {
+            type: String,
+            required: true,
+        },
+        url: {
+            type: String,
+            required: true,
+        },
+    },
+ 
+ shopId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Shop",
+        default: null,
+    },
+ 
+roleId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Role",
+        default: null,
+    },
+ 
+      type: String,
+    },
+    phone: {
+        type: String,
+        validate: {
+            validator: function (v) {
+                const phoneRegex = /(03|05|07|09|08|01[2|6|8|9])+([0-9]{8})\b/;
+                return phoneRegex.test(v);
+            },
+            message: "Invalid phone number, please try again."
+        }
+    },
+ 
+  firstName: {
+        type: String,
+        required: [true, "Please enter your first name!"],
+    },
+    lastName: {
+        type: String,
+        required: [true, "Please enter your last name!"],
+    },
+ 
+roleId,
+                shopId,
+                avatar 
+ 
+address,
+                phone,
+ 
+ firstName,
+                lastName,
+ 
+if (!phoneRegex.test(phone)) {
+                return res.status(400).json({
+                    success: false,
+                    message: "Invalid phone number, please try again."
+                });
+            }
+ 
+import {v2 as cloudinary} from 'cloudinary';
+          
+cloudinary.config({ 
+  cloud_name: 'da1tzg7nk', 
+  api_key: '426738221437142', 
+  api_secret: 'CzTtFhbYMMQskaVMXIpyR24US08' 
+});
+ 
+import {v2 as cloudinary} from 'cloudinary';
+          
+cloudinary.config({ 
+  cloud_name: 'da1tzg7nk', 
+  api_key: '426738221437142', 
+  api_secret: 'CzTtFhbYMMQskaVMXIpyR24US08' 
+});
+ 
+cloudinary.config({ 
+ 
+import {v2 as cloudinary} from 'cloudinary';
+ 
+import './server'; 
+ 
+// Sửa lại đường dẫn này theo đúng đường dẫn của tệp server.js trong dự án của bạn
+ 
+   "start": "ts-node-dev --transpileOnly ./src/server.ts"
+ 
